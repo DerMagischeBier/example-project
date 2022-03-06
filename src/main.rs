@@ -15,3 +15,12 @@ fn main() {
         add_numbers(a, b, c)
     );
 }
+
+#[test]
+fn test_add_numbers() {
+    let a = 1;
+    let b = 3;
+    let c = 7;
+
+    assert_eq!(11, add_numbers(a,b,c));
+}
